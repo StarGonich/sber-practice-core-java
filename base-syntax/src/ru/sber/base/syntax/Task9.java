@@ -11,14 +11,14 @@ public class Task9 {
         do {
             char cur = Character.toUpperCase(scanner.next().charAt(0));
             if (cur > 'Z' || cur < 'A') {
-                System.out.println("Введен недопустимый символ");
+                System.out.println("Р’РІРµРґРµРЅ РЅРµРґРѕРїСѓСЃС‚РёРјС‹Р№ СЃРёРјРІРѕР»");
             } else if (cur == letter) {
-                System.out.println("Верно");
+                System.out.println("Р’РµСЂРЅРѕ");
                 flag = true;
             } else if (cur > letter) {
-                System.out.println("Ищи букву, которая перед ней в алфавите");
+                System.out.println("РС‰Рё Р±СѓРєРІСѓ, РєРѕС‚РѕСЂР°СЏ РїРµСЂРµРґ РЅРµР№ РІ Р°Р»С„Р°РІРёС‚Рµ");
             } else {
-                System.out.println("Ищи букву, которая после нее в алфавите");
+                System.out.println("РС‰Рё Р±СѓРєРІСѓ, РєРѕС‚РѕСЂР°СЏ РїРѕСЃР»Рµ РЅРµРµ РІ Р°Р»С„Р°РІРёС‚Рµ");
             }
         } while (!flag);
     }
