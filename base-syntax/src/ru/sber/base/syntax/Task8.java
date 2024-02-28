@@ -22,7 +22,7 @@ public class Task8 {
     public static void main(String[] args) {
         int[] a = new int[30];
         for (int i = 0; i < 30; i++) {
-            a[i] = (int)(Math.random() * 1000);
+            a[i] = (int)(Math.random() * 1001);
         }
         System.out.println(Arrays.toString(a));
         bubbleSort(a);

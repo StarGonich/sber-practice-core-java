@@ -5,11 +5,11 @@ public class Task7 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите a = ");
-        double a = in.nextInt();
+        double a = in.nextDouble();
         System.out.print("Введите b = ");
-        double b = in.nextInt();
+        double b = in.nextDouble();
         System.out.print("Введите c = ");
-        double c = in.nextInt();
+        double c = in.nextDouble();
         double D = b*b - 4*a*c;
         if (D > 0) {
             double x1 = (-b + Math.sqrt(D)) / (2*a);

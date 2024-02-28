@@ -2,12 +2,13 @@ package ru.sber.base.syntax;
 
 public class Task6 {
     public static void main(String[] args) {
-        int[] array = new int[100];
+        int len = 100;
+        int[] array = new int[len];
         int mx = 0;
         int mx_index = 0;
         int sum = 0;
-        for (int i = 0; i < 100; i++) {
-            array[i] = (int)(Math.random() * 1000);
+        for (int i = 0; i < len; i++) {
+            array[i] = (int)(Math.random() * 1001);
             if (array[i] > mx) {
                 mx = array[i];
                 mx_index = i;
@@ -15,6 +16,6 @@ public class Task6 {
             sum += array[i];
         }
         System.out.println("Максимальное значение = " + mx + " находится в элементе под индексом " + mx_index);
-        System.out.println("Среднее значение = " + (sum / 100));
+        System.out.println("Среднее значение = " + ((double)sum / len));
     }
 }
